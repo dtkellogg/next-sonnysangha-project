@@ -24,8 +24,6 @@ export default function Header() {
 
       </div>
         <NavLinks />
-
-        {/* SearchBox */}
         <SearchBox />
     </header>
   )
