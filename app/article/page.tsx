@@ -11,7 +11,7 @@ function ArticlePage({searchParams}: Props) {
     !searchParams
   ) {
     return notFound()
-  }
+  } 
 
   const article: Article = searchParams
 
