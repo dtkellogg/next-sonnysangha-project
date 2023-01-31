@@ -5,8 +5,8 @@ import response from '../response.json'
 
 async function Homepage() {
   const news: NewsResponse = 
-    // response || (await fetchNews(categories.join(",")))  // to avoid running out of API calls, use copied data in "response"
-    await fetchNews(categories.join(","))
+    response || (await fetchNews(categories.join(",")))  // to avoid running out of API calls, use copied data in "response"
+    // await fetchNews(categories.join(","))
 
   return (
     <div>
